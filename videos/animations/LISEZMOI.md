@@ -16,6 +16,12 @@ Les animations sont générées en Python avec [Manim](https://www.manim.communi
 | `mp4/E2CinquanteParts.mp4` | `E2CinquanteParts` | 5 · Un cinquantième | 8 s |
 | `mp4/F1ArcEtCoefficient.mp4` | `F1ArcEtCoefficient` | 6 · Proportionnalité | 10 s |
 | `mp4/F2RegleDeTrois.mp4` | `F2RegleDeTrois` | 6 · Proportionnalité | 11 s |
+| `mp4/G1DeuxAunes.mp4` | `G1DeuxAunes` | 7 · Pagaille des unités | 7 s |
+| `mp4/G2ToisePiedsPouces.mp4` | `G2ToisePiedsPouces` | 7 · Pagaille des unités | 10 s |
+| `mp4/H1BaseDeuxAngles.mp4` | `H1BaseDeuxAngles` | 8 · Triangulation | 9 s |
+| `mp4/H2ChaineDeTriangles.mp4` | `H2ChaineDeTriangles` | 8 · Triangulation | 10 s |
+| `mp4/I1ExposantZeros.mp4` | `I1ExposantZeros` | 9 · Puissances de 10 | 10 s |
+| `mp4/I2TropGrandTropPetit.mp4` | `I2TropGrandTropPetit` | 9 · Puissances de 10 | 9 s |
 
 ## Refaire le rendu
 
@@ -61,6 +67,14 @@ python -m uv pip install --python .venv/Scripts/python.exe manim
 
 ```bash
 .venv/Scripts/python -m manim -r 1920,1080 --fps 30 f1_f2_proportionnalite.py F1ArcEtCoefficient F2RegleDeTrois
+```
+
+```bash
+.venv/Scripts/python -m manim -r 1920,1080 --fps 30 g1_g2_pagaille.py G1DeuxAunes G2ToisePiedsPouces
+```
+
+```bash
+.venv/Scripts/python -m manim -r 1920,1080 --fps 30 h1_h2_triangulation.py H1BaseDeuxAngles H2ChaineDeTriangles
 ```
 
 Évitez aussi les symboles absents de Georgia (①, ↓…) : ils s'affichent comme des carrés.

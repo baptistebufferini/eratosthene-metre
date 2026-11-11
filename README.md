@@ -58,6 +58,8 @@ Un emplacement vide (`""`) affiche l'indice en texte, ce qui est le comportement
 | `cinquantieme` | étape 4, premier indice de la fraction du tour |
 | `proportionnalite` | étapes 6 et 8, premier indice |
 | `puissances-de-10` | étape 9, premier indice |
+| `partie2-introduction` | écran de transition avant la partie 2 |
+| `triangulation` | début de l'étape 8 |
 
 Pour placer une vidéo sur un autre indice, ajoutez `"video": "nom-de-l-emplacement"` à cet indice dans `config/contenu.json`, puis ajoutez l'emplacement dans `config/videos.json`.
 

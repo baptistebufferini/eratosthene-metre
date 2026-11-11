@@ -908,6 +908,10 @@
         {
           "type": "texte",
           "texte": "Aujourd'hui, nous utilisons le <strong>mètre</strong>. Mais d'où vient-il, et quel est son lien avec le tour de la Terre ?"
+        },
+        {
+          "type": "video",
+          "cle": "partie2-introduction"
         }
       ]
     },
@@ -1026,13 +1030,17 @@
       "calculatrice": true,
       "blocs": [
         {
+          "type": "video",
+          "cle": "triangulation"
+        },
+        {
           "type": "texte",
           "texte": "De 1792 à 1798, deux astronomes, Jean-Baptiste Delambre et Pierre Méchain, mesurent l'arc de méridien entre Dunkerque et Barcelone, en pleine Révolution.",
           "sceau": "delambre-mechain"
         },
         {
           "type": "texte",
-          "texte": "Un travail immense et parfois dangereux : arrêtés comme espions, bloqués par la guerre… Méchain, lui, garda toute sa vie le secret d'une petite erreur dans ses mesures.",
+          "texte": "Un travail immense et parfois dangereux : Delambre arrêté comme espion, Méchain bloqué en Espagne par la guerre… Méchain, lui, garda toute sa vie le secret d'une petite erreur dans ses mesures.",
           "sceau": "mechain-erreur"
         },
         {
