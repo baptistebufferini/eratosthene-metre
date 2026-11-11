@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Vérification des codes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=IM+Fell+English&display=swap" rel="stylesheet">
+  <style>
+    :root { --parchemin: #f1e2c0; --encre: #3a2614; --sepia: #7a4f27; --vert: #2f6b3a; --rouge: #9e2a22; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: #2e2117; color: var(--encre); font: 1.1rem/1.5 "EB Garamond", Georgia, serif; }
+    main { max-width: 720px; margin: 24px auto; padding: 28px clamp(16px, 5vw, 44px); background: linear-gradient(160deg, var(--parchemin), #e2cc9c); border-radius: 8px; box-shadow: 0 18px 40px rgba(0, 0, 0, .45); }
+    h1 { margin: 0 0 .2em; font: 400 2rem "IM Fell English", Georgia, serif; text-align: center; }
+    .sous-titre { margin: 0 0 1.4em; text-align: center; color: #6b5236; }
+    form { display: grid; gap: 12px; }
+    label { font-weight: 600; }
+    input { width: 100%; padding: .5em .7em; font: inherit; border: 0; border-bottom: 2px solid var(--encre); background: rgba(255, 250, 235, .6); }
+    #code { font-family: ui-monospace, Consolas, monospace; text-transform: uppercase; letter-spacing: .08em; }
+    button { justify-self: center; padding: .5em 1.6em; border: 0; border-radius: 999px; background: var(--encre); color: var(--parchemin); font: 1.1rem "IM Fell English", Georgia, serif; cursor: pointer; }
+    button:focus-visible, input:focus-visible { outline: 3px solid #2f6fb3; outline-offset: 2px; }
+    #resultat { margin-top: 1.6em; }
+    .verdict { padding: .6em 1em; border-radius: 8px; font-weight: 600; }
+    .valide { background: rgba(47, 107, 58, .15); border-left: 6px solid var(--vert); }
+    .invalide { background: rgba(158, 42, 34, .12); border-left: 6px solid var(--rouge); }
+    .chiffres { display: flex; flex-wrap: wrap; gap: 10px; margin: 1em 0; padding: 0; list-style: none; }
+    .chiffres li { padding: .4em .9em; border-radius: 999px; background: rgba(122, 79, 39, .12); }
+    .etapes { columns: 2 240px; padding-left: 0; list-style: none; }
+    .etapes li { break-inside: avoid; padding: 2px 0; }
+    .etapes .non { color: #8a7660; }
+    .note { margin-top: 2em; font-size: .95rem; color: #6b5236; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Vérification des codes</h1>
+    <p class="sous-titre">De la Terre d'Ératosthène au mètre · page du professeur</p>
+    <form id="formulaire">
+      <label for="nom">Nom de l'élève (tel qu'il l'a tapé ; accents et majuscules ne comptent pas)</label>
+      <input id="nom" autocomplete="off" required>
+      <label for="code">Code (final ou de reprise)</label>
+      <input id="code" autocomplete="off" placeholder="XXXXX-XXXXX" required>
+      <button>Vérifier</button>
+    </form>
+    <section id="resultat" aria-live="polite"></section>
+    <p class="note">Le code est calculé à partir du nom, des étapes réussies, du nombre d'erreurs et du nombre d'indices. Tout se vérifie dans le navigateur, sans serveur : un élève très motivé qui lit le code source pourrait en fabriquer un. C'est une protection contre la triche ordinaire, pas une sécurité absolue.</p>
+  </main>
+  <script type="module">
+    import { decoderCode, reussiesDe, etapesNotees } from "./js/codes.js";
+    const resultat = document.getElementById("resultat");
+    const echapper = (t) => String(t).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+    let C;
+    try { C = await fetch("config/contenu.json").then((r) => r.json()); }
+    catch { resultat.innerHTML = '<p class="verdict invalide">Impossible de charger config/contenu.json (la page doit être servie par un serveur, voir le README).</p>'; }
+
+    document.getElementById("formulaire").addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!C) return;
+      const nom = document.getElementById("nom").value;
+      const d = decoderCode(nom, document.getElementById("code").value);
+      if (!d) {
+        resultat.innerHTML = `<p class="verdict invalide">Code non valide pour « ${echapper(nom.trim())} ». Vérifiez l'orthographe du nom et le code (les lettres O et I n'existent pas dans les codes).</p>`;
+        return;
+      }
+      const notees = etapesNotees(C.etapes);
+      const reussies = reussiesDe(C.etapes, d.masque);
+      const termine = d.etape >= C.etapes.length;
+      const enCours = C.etapes[d.etape];
+      const titre = (E) => (E.numero ? `Étape ${E.numero} · ` : "") + E.titre;
+      resultat.innerHTML = `
+        <p class="verdict valide">Code valide pour « ${echapper(nom.trim())} » · ${termine ? "code final : activité terminée" : `code de reprise, en cours : ${echapper(enCours.surtitre || titre(enCours))}`}</p>
+        <ul class="chiffres">
+          <li><strong>${reussies.length} / ${notees.length}</strong> étapes réussies</li>
+          <li><strong>${d.erreurs}${d.erreurs === 255 ? "+" : ""}</strong> erreur${d.erreurs > 1 ? "s" : ""}</li>
+          <li><strong>${d.indices}${d.indices === 255 ? "+" : ""}</strong> indice${d.indices > 1 ? "s" : ""} utilisé${d.indices > 1 ? "s" : ""}</li>
+        </ul>
+        <ul class="etapes">${notees.map((E) => `<li class="${reussies.includes(E.id) ? "" : "non"}">${reussies.includes(E.id) ? "✔" : "○"} ${echapper(titre(E))}</li>`).join("")}</ul>`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+.claude/
+videos/animations/.venv/
+videos/animations/media/
+__pycache__/

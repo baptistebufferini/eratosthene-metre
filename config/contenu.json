@@ -1,0 +1,1320 @@
+{
+  "accueil": {
+    "surtitre": "Carnet de voyage",
+    "titre": "De la Terre d'Ératosthène au mètre",
+    "blocs": [
+      {
+        "texte": "Vers 240 avant notre ère, à Alexandrie, un savant grec nommé Ératosthène se pose une question folle : quelle est la taille de la Terre ? Il va la mesurer… sans jamais en faire le tour.",
+        "sceau": "date-mesure"
+      },
+      {
+        "texte": "Dans ce carnet, tu vas refaire son raisonnement, puis découvrir comment, deux mille ans plus tard, le tour de la Terre a donné naissance au mètre."
+      }
+    ],
+    "questionNom": "Avant de partir, écris ton nom sur le carnet :",
+    "boutonDepart": "Ouvrir le carnet",
+    "reprise": "Tu as déjà commencé sur un autre appareil ?",
+    "repriseAide": "Écris ton code de reprise (avec le même nom) :",
+    "repriseInvalide": "Ce code ne correspond pas à ce nom. Vérifie l'orthographe de ton nom et le code."
+  },
+  "parties": [
+    {
+      "titre": "Partie 1 · Ératosthène mesure la Terre",
+      "nbEtapes": 6,
+      "carte": {
+        "titre": "Carte de l'Égypte, d'Alexandrie à Syène",
+        "mer": "Mer Méditerranée",
+        "depart": "Alexandrie",
+        "arrivee": "Syène",
+        "type": "egypte",
+        "progression": "Le bématiste a parcouru {p} % du chemin."
+      }
+    },
+    {
+      "titre": "Partie 2 · La naissance du mètre",
+      "nbEtapes": 5,
+      "carte": {
+        "type": "france",
+        "titre": "Carte de France, de Dunkerque à Barcelone",
+        "mer": "Océan Atlantique",
+        "depart": "Dunkerque",
+        "arrivee": "Barcelone",
+        "progression": "Delambre et Méchain ont mesuré {p} % de l'arc."
+      }
+    }
+  ],
+  "messages": {
+    "juste": "Bien vu !",
+    "faux": "Ce n'est pas encore ça. Une note vient d'apparaître dans la marge : gratte-la si tu veux un coup de pouce.",
+    "illisible": "Je n'arrive pas à lire ta réponse : écris un nombre ou une fraction (par exemple 3/4 ou 0,75).",
+    "suivant": "Tourner la page",
+    "passer": "Passer le défi"
+  },
+  "sceaux": {
+    "date-mesure": {
+      "couleur": "orange",
+      "texte": "Ératosthène (vers 276 – vers 194 av. J.-C.) dirigeait la bibliothèque d'Alexandrie. La date exacte de sa mesure n'est pas connue : « vers 240 av. J.-C. » est une estimation courante.",
+      "source": "Cléomède, <i>Caelestia</i> I, 7 ; Souda, notice « Ératosthène »"
+    },
+    "cinquantieme": {
+      "couleur": "vert",
+      "texte": "Cléomède rapporte qu'Ératosthène avait trouvé un angle d'un cinquantième de cercle, et en avait déduit que l'arc d'Alexandrie à Syène était un cinquantième du tour de la Terre.",
+      "source": "Cléomède, <i>Caelestia</i> I, 7"
+    },
+    "degres": {
+      "couleur": "rouge",
+      "texte": "Simplification : à l'époque d'Ératosthène, les Grecs ne découpaient pas encore le cercle en 360 degrés. Cette division apparaît chez les astronomes grecs un peu plus tard (Hypsiclès, Hipparque, IIe siècle av. J.-C.). Ératosthène parlait d'« un cinquantième du cercle » ; les 7,2° sont notre façon moderne de l'écrire.",
+      "source": "Cléomède, <i>Caelestia</i> I, 7 ; O. Neugebauer, <i>A History of Ancient Mathematical Astronomy</i>, 1975"
+    },
+    "aristote-convaincus": {
+      "couleur": "vert",
+      "texte": "Vers 350 av. J.-C., Aristote rassemble dans son traité <i>Du ciel</i> plusieurs arguments montrant que la Terre est sphérique. L'idée était déjà défendue avant lui, notamment par les pythagoriciens et Parménide.",
+      "source": "Aristote, <i>Du ciel</i> II, 14"
+    },
+    "proportions": {
+      "couleur": "rouge",
+      "texte": "Simplification : dans ces animations, la Terre est dessinée bien plus petite (et les navires bien plus grands) qu'en réalité, sinon on ne verrait rien. Les vues sont pourtant calculées avec une vraie géométrie de la sphère.",
+      "source": "choix fait pour l'activité"
+    },
+    "navire": {
+      "couleur": "orange",
+      "texte": "L'observation est réelle, mais elle n'est pas chez Aristote. Strabon (vers l'an 20) en donne une version voisine : la courbure de la mer cache aux marins les lumières lointaines placées à hauteur des yeux, alors que celles placées plus haut restent visibles. Le navire dont la coque disparaît avant le mât est l'illustration moderne de cette idée.",
+      "source": "Strabon, <i>Géographie</i> I, 1, 20"
+    },
+    "canopus": {
+      "couleur": "orange",
+      "texte": "Aristote écrit que certaines étoiles visibles en Égypte et à Chypre ne le sont pas dans les pays plus au nord, mais il ne les nomme pas. Canopus est l'exemple classique : elle est invisible depuis Athènes et visible depuis Alexandrie, et Posidonius s'en servira plus tard pour estimer la taille de la Terre. Dans l'animation, chaque étoile est dessinée à sa plus grande hauteur.",
+      "source": "Aristote, <i>Du ciel</i> II, 14 ; Cléomède, <i>Caelestia</i> I, 7"
+    },
+    "eclipse-aristote": {
+      "couleur": "vert",
+      "texte": "Aristote remarque que, lors des éclipses de Lune, le bord de l'ombre de la Terre est toujours courbe, et il en conclut que la Terre est sphérique.",
+      "source": "Aristote, <i>Du ciel</i> II, 14"
+    },
+    "puits-strabon": {
+      "couleur": "orange",
+      "texte": "Strabon mentionne à Syène un puits qui marque le tropique d'été : ce jour-là, à midi, le Soleil l'éclaire jusqu'au fond. Mais aucun texte ne dit qu'Ératosthène s'en est servi : Cléomède parle seulement des gnomons (des tiges plantées verticalement) qui, à Syène, n'ont pas d'ombre à midi au solstice d'été.",
+      "source": "Strabon, <i>Géographie</i> XVII, 1, 48 ; Cléomède, <i>Caelestia</i> I, 7"
+    },
+    "solstice": {
+      "couleur": "orange",
+      "texte": "Le principe est attesté : Cléomède rapporte qu'au solstice d'été, à midi, le Soleil est à la verticale de Syène. En réalité, Syène (aujourd'hui Assouan) est un peu au nord du tropique : le Soleil n'y passe pas exactement à la verticale, mais l'écart est si faible qu'on ne le remarque presque pas.",
+      "source": "Cléomède, <i>Caelestia</i> I, 7"
+    },
+    "obelisque": {
+      "couleur": "rouge",
+      "texte": "Simplification : d'après Cléomède, Ératosthène a mesuré l'ombre dans une scaphé, un cadran solaire en forme de demi-sphère creuse avec une tige (gnomon) au centre. L'obélisque rend le schéma plus simple à lire.",
+      "source": "Cléomède, <i>Caelestia</i> I, 7"
+    },
+    "soleil-loin": {
+      "couleur": "vert",
+      "texte": "Le Soleil est à environ 150 millions de km de la Terre, alors qu'Alexandrie et Syène ne sont qu'à environ 800 km l'une de l'autre : les rayons qui atteignent les deux villes ont presque exactement la même direction (moins d'un millième de degré d'écart). Selon Cléomède, Ératosthène supposait déjà les rayons parallèles.",
+      "source": "Cléomède, <i>Caelestia</i> I, 7 ; valeurs astronomiques actuelles"
+    },
+    "meme-meridien": {
+      "couleur": "rouge",
+      "texte": "Simplification : Syène n'est pas exactement au sud d'Alexandrie, elle est environ 3° plus à l'est. Ératosthène, et cette activité, font comme si les deux villes étaient sur le même méridien.",
+      "source": "positions actuelles d'Alexandrie et d'Assouan"
+    },
+    "5000-stades": {
+      "couleur": "vert",
+      "texte": "Cléomède indique que la distance entre Syène et Alexandrie est de 5 000 stades.",
+      "source": "Cléomède, <i>Caelestia</i> I, 7"
+    },
+    "bematistes": {
+      "couleur": "orange",
+      "texte": "Les bématistes ont bien existé : Alexandre le Grand en emmenait dans ses campagnes pour mesurer les routes en comptant leurs pas (Pline cite Diognète et Béton). Mais aucun texte ne dit comment Ératosthène a obtenu la distance d'Alexandrie à Syène : les bématistes royaux sont une hypothèse, pas un fait établi.",
+      "source": "Pline l'Ancien, <i>Histoire naturelle</i>, livre VI"
+    },
+    "chameaux": {
+      "couleur": "rouge",
+      "texte": "Légende populaire : on lit souvent que la distance aurait été estimée d'après le temps de marche de caravanes de chameaux. Aucune source antique ne le dit.",
+      "source": "absent de Cléomède, Strabon et Pline"
+    },
+    "alexandrie-grecque": {
+      "couleur": "vert",
+      "texte": "Alexandrie a été fondée en 331 av. J.-C. par Alexandre le Grand. Sous les Ptolémées, des rois d'origine grecque, c'est une grande ville de langue grecque, où l'on mesure les distances en stades. La coudée, elle, est une unité égyptienne.",
+      "source": "Arrien, <i>Anabase</i> III, 1 ; Strabon, <i>Géographie</i> XVII"
+    },
+    "250000": {
+      "couleur": "vert",
+      "texte": "Cléomède rapporte le résultat de 250 000 stades. D'autres auteurs (Vitruve, Pline l'Ancien) donnent 252 000 stades : selon une hypothèse courante, Ératosthène aurait ajusté son résultat pour obtenir un nombre divisible par 60.",
+      "source": "Cléomède, <i>Caelestia</i> I, 7 ; Vitruve, <i>De l'architecture</i> I, 6 ; Pline l'Ancien, <i>Histoire naturelle</i> II"
+    },
+    "unites-pagaille": {
+      "couleur": "vert",
+      "texte": "Avant la Révolution, les unités changent d'une ville à l'autre : l'aune, la livre ou le boisseau n'ont pas la même valeur à Paris, à Lyon ou à Toulouse. En 1789, de nombreux cahiers de doléances réclament une mesure unique.",
+      "source": "cahiers de doléances de 1789 ; K. Alder, <i>Mesurer le monde</i>, 2005"
+    },
+    "toise-pieds": {
+      "couleur": "vert",
+      "texte": "Toise de Paris (dite du Châtelet) : 1 toise = 6 pieds, 1 pied = 12 pouces, 1 pouce = 12 lignes.",
+      "source": "Delambre, <i>Base du système métrique décimal</i>"
+    },
+    "condorcet": {
+      "couleur": "orange",
+      "texte": "La formule « À tous les temps, à tous les peuples » résume l'ambition des savants de la Révolution ; elle est associée à Condorcet, qui dirigeait alors l'Académie des sciences. Son origine exacte est mal documentée.",
+      "source": "D. Février, histoire de la métrologie ; K. Alder, <i>Mesurer le monde</i>, 2005"
+    },
+    "academie-1791": {
+      "couleur": "vert",
+      "texte": "Le 19 mars 1791, une commission de l'Académie des sciences (Borda, Lagrange, Laplace, Monge, Condorcet) propose de prendre pour unité la dix-millionième partie du quart du méridien terrestre. L'Assemblée adopte ce choix le 26 mars 1791.",
+      "source": "Rapport de l'Académie des sciences, 19 mars 1791 ; décret du 26 mars 1791"
+    },
+    "delambre-mechain": {
+      "couleur": "vert",
+      "texte": "Delambre mesure la partie nord (Dunkerque–Rodez), Méchain la partie sud (Rodez–Barcelone). Ils procèdent par triangulation : une chaîne de triangles dont on mesure les angles, avec seulement deux longueurs mesurées directement au sol (près de Melun et de Perpignan).",
+      "source": "Delambre, <i>Base du système métrique décimal</i>, 1806-1810"
+    },
+    "mechain-erreur": {
+      "couleur": "vert",
+      "texte": "Méchain a relevé à Barcelone un petit désaccord dans ses mesures de latitude. Il l'a caché, et ce secret l'a tourmenté jusqu'à sa mort en 1804. L'erreur, minuscule, n'a presque pas changé la valeur du mètre.",
+      "source": "K. Alder, <i>Mesurer le monde</i>, 2005"
+    },
+    "arc-valeurs": {
+      "couleur": "orange",
+      "texte": "Valeurs arrondies : l'arc de Dunkerque à Barcelone mesure environ 1 076 km, soit environ 551 600 toises, pour environ 9,67° de latitude. Les valeurs exactes publiées par Delambre (au dixième de toise et à la seconde d'arc près) n'ont pas pu être vérifiées dans la source originale pour cette activité.",
+      "source": "Delambre, <i>Base du système métrique décimal</i>, 1806-1810 (non consulté) ; longueurs des deux sections : 742,7 km et 333,0 km"
+    },
+    "aplatissement": {
+      "couleur": "orange",
+      "texte": "Simplification : la Terre n'est pas une sphère parfaite, elle est un peu aplatie aux pôles. Pour passer de l'arc mesuré au quart de méridien, les savants ont tenu compte de cet aplatissement (estimé alors à 1/334). Ils ont trouvé 5 130 740 toises, un peu moins que la simple règle de trois.",
+      "source": "Delambre, <i>Base du système métrique décimal</i>"
+    },
+    "trois-raisons": {
+      "couleur": "vert",
+      "texte": "Le rapport de l'Académie de 1791 insiste sur une unité tirée de la nature, divisée selon le système décimal, et de grandeur commode pour l'usage courant.",
+      "source": "Rapport de l'Académie des sciences, 19 mars 1791"
+    },
+    "pendule": {
+      "couleur": "vert",
+      "texte": "En 1790, Talleyrand propose de définir l'unité par la longueur d'un pendule qui bat la seconde. En 1791, l'Académie y renonce : cette longueur dépend de la pesanteur, qui varie selon le lieu, et de la définition de la seconde.",
+      "source": "Rapport de l'Académie des sciences, 19 mars 1791"
+    },
+    "grade": {
+      "couleur": "vert",
+      "texte": "Les savants révolutionnaires ont aussi proposé des angles décimaux : le grade partage le quart de tour en 100. Il existe encore sur les calculatrices (mode « grad »).",
+      "source": "loi du 18 germinal an III (1795)"
+    },
+    "convention-metre": {
+      "couleur": "vert",
+      "texte": "Le mètre s'impose lentement : il ne devient obligatoire en France qu'en 1840. Il devient international avec la Convention du Mètre, signée à Paris le 20 mai 1875 par 17 États.",
+      "source": "loi du 4 juillet 1837 ; Convention du Mètre, 1875 (BIPM)"
+    },
+    "metre-1799": {
+      "couleur": "vert",
+      "texte": "En 1799, un mètre étalon en platine est déposé aux Archives. Il vaut 3 pieds 11,296 lignes, soit 0,513 074 toise.",
+      "source": "loi du 19 frimaire an VIII (10 décembre 1799)"
+    },
+    "40000": {
+      "couleur": "vert",
+      "texte": "Les mesures modernes donnent environ 40 008 km pour le tour de la Terre en passant par les pôles. Le mètre de 1799 était donc à peine trop court, d'environ 0,2 mm, surtout à cause d'une erreur au sud de l'arc.",
+      "source": "ellipsoïde de référence WGS 84"
+    },
+    "stade-fourchette": {
+      "couleur": "orange",
+      "texte": "La longueur du stade utilisé par Ératosthène est débattue : les historiens proposent entre environ 157,5 m (stade dit « égyptien ») et 185 m (stade attique). On ne sait pas lequel il a utilisé.",
+      "source": "D. Engels, « The Length of Eratosthenes' Stade », <i>American Journal of Philology</i> 106, 1985 ; J.-A. Letronne, 1816 (stade de 157 m)"
+    }
+  },
+  "etapes": [
+    {
+      "id": "prologue",
+      "partie": 0,
+      "numero": 0,
+      "surtitre": "Prologue",
+      "titre": "On sait déjà que la Terre est ronde",
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "Quand Ératosthène se lance dans sa mesure, les savants grecs sont déjà convaincus que la Terre est une boule. Environ un siècle plus tôt, Aristote avait rassemblé plusieurs observations qui le montrent. À toi de les vérifier !",
+          "sceau": "aristote-convaincus"
+        },
+        {
+          "type": "texte",
+          "texte": "Dans chaque schéma, la Terre plate est à gauche et la Terre ronde à droite. Un seul curseur commande les deux : à toi de voir laquelle ressemble à ce qu'on observe vraiment.",
+          "sceau": "proportions"
+        },
+        {
+          "type": "texte",
+          "texte": "<strong>Premier indice : le navire.</strong> Depuis le rivage, on regarde un navire qui s'éloigne vers le large. Les marins le savent bien : la coque disparaît d'abord, et le haut du mât en dernier.",
+          "sceau": "navire"
+        },
+        {
+          "type": "popup",
+          "nom": "navire",
+          "large": true,
+          "titre": "Le navire qui s'éloigne",
+          "bouton": "Déplier : le navire",
+          "boutonRevoir": "Revoir le navire",
+          "consigne": "Éloigne le navire avec le curseur et compare les deux Terres."
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<p>Sur quelle Terre la coque disparaît-elle avant le mât, comme dans la réalité ?</p>",
+          "options": [
+            "Sur la Terre plate",
+            "Sur la Terre ronde",
+            "Sur les deux"
+          ],
+          "reponse": "VA==",
+          "retours": [
+            "Regarde à gauche : sur la Terre plate, le navire rapetisse mais reste entier.",
+            "",
+            "Regarde à gauche : sur la Terre plate, le navire rapetisse mais reste entier."
+          ],
+          "indices": [
+            {
+              "texte": "Regarde ce que voit l'observateur sur chaque Terre quand le navire est très loin."
+            },
+            {
+              "texte": "Sur quelle Terre la ligne de visée frôle-t-elle la mer avant d'atteindre le navire ?"
+            },
+            {
+              "texte": "Exemple corrigé : quand on s'éloigne derrière une bosse du terrain, nos pieds disparaissent avant notre tête. La courbure de la mer joue le rôle de la bosse."
+            }
+          ]
+        },
+        {
+          "type": "texte",
+          "texte": "<strong>Deuxième indice : les étoiles.</strong> En voyageant de la Grèce vers l'Égypte, on voit apparaître dans le ciel du sud des étoiles qu'on ne voit jamais depuis la Grèce, comme Canopus, la deuxième étoile la plus brillante de la nuit.",
+          "sceau": "canopus"
+        },
+        {
+          "type": "popup",
+          "nom": "etoiles",
+          "large": true,
+          "titre": "Le ciel du voyageur",
+          "bouton": "Déplier : les étoiles",
+          "boutonRevoir": "Revoir les étoiles",
+          "consigne": "Fais voyager le voyageur de la Grèce jusqu'en Égypte et regarde le ciel au sud."
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<p>Quelle Terre explique l'apparition de Canopus quand on descend vers le sud ?</p>",
+          "options": [
+            "La Terre plate",
+            "La Terre ronde",
+            "Aucune des deux"
+          ],
+          "reponse": "VA==",
+          "retours": [
+            "Sur la Terre plate, le voyageur voit toujours le même ciel : Canopus n'apparaît jamais.",
+            "",
+            "Regarde encore la Terre ronde quand le voyageur arrive en Égypte."
+          ],
+          "indices": [
+            {
+              "texte": "Compare le ciel de gauche et celui de droite quand le voyageur arrive en Égypte."
+            },
+            {
+              "texte": "Sur la Terre ronde, l'horizon du voyageur s'incline à mesure qu'il avance : il découvre une autre partie du ciel."
+            },
+            {
+              "texte": "Exemple corrigé : sur une colline arrondie, si tu marches vers le sud, tu découvres peu à peu ce qui était caché derrière la pente. Avec le ciel, c'est pareil."
+            }
+          ]
+        },
+        {
+          "type": "texte",
+          "texte": "<strong>Troisième indice : les éclipses de Lune.</strong> Pendant une éclipse de Lune, la Terre passe entre le Soleil et la Lune, et son ombre se projette sur la Lune. Le bord de cette ombre est toujours un arc de cercle.",
+          "sceau": "eclipse-aristote"
+        },
+        {
+          "type": "popup",
+          "nom": "eclipses",
+          "large": true,
+          "titre": "L'ombre de la Terre sur la Lune",
+          "bouton": "Déplier : les éclipses",
+          "boutonRevoir": "Revoir les éclipses",
+          "consigne": "Déplace la Lune autour de la Terre et observe la forme de l'ombre."
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<p>Quelle forme de Terre donne une ombre ronde, quelle que soit la position de la Lune ?</p>",
+          "options": [
+            "Un disque plat",
+            "Une boule",
+            "Les deux"
+          ],
+          "reponse": "VA==",
+          "retours": [
+            "Pas toujours : selon la position de la Lune, l'ombre du disque devient ovale, voire presque une ligne droite.",
+            "",
+            "Pas toujours : selon la position de la Lune, l'ombre du disque devient ovale, voire presque une ligne droite."
+          ],
+          "indices": [
+            {
+              "texte": "Déplace la Lune tout autour de la Terre et regarde l'ombre du disque."
+            },
+            {
+              "texte": "Pense à une pièce de monnaie éclairée par une lampe : son ombre est-elle toujours ronde ?"
+            },
+            {
+              "texte": "Exemple corrigé : un ballon donne toujours une ombre ronde, d'où qu'on l'éclaire. Une pièce donne une ombre ronde de face, mais un simple trait si on l'éclaire par la tranche."
+            }
+          ]
+        }
+      ],
+      "conclusion": "La forme de la Terre est connue : c'est une boule. Mais une grande question reste sans réponse : <strong>quelle est sa taille ?</strong> C'est le défi que va relever Ératosthène.",
+      "carnet": {
+        "libelle": "Forme de la Terre",
+        "valeur": "une boule"
+      }
+    },
+    {
+      "id": "etape1",
+      "partie": 1,
+      "numero": 1,
+      "titre": "Le puits de Syène",
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "Ératosthène a entendu parler d'un phénomène étonnant à Syène, une ville du sud de l'Égypte : le jour le plus long de l'année, à midi, le Soleil éclaire le fond des puits.",
+          "sceau": "puits-strabon"
+        },
+        {
+          "type": "texte",
+          "texte": "Ce jour-là, à midi, le Soleil est donc exactement au-dessus de Syène.",
+          "sceau": "solstice"
+        },
+        {
+          "type": "texte",
+          "texte": "Au même moment, à Alexandrie, plus au nord, un grand obélisque projette pourtant une ombre…",
+          "sceau": "obelisque"
+        },
+        {
+          "type": "popup",
+          "nom": "puits",
+          "large": true,
+          "titre": "Le puits de Syène",
+          "bouton": "Déplier : le puits de Syène",
+          "boutonRevoir": "Revoir le puits",
+          "consigne": "Déplace le Soleil jusqu'à ce que le fond du puits soit entièrement éclairé, sans aucune ombre."
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<p>Quand le fond du puits est entièrement éclairé, que se passe-t-il pour l'obélisque d'Alexandrie ?</p>",
+          "reponse": "VA==",
+          "indices": [
+            {
+              "texte": "Rouvre le schéma et regarde l'obélisque quand le puits est entièrement éclairé."
+            },
+            {
+              "texte": "Le Soleil n'est exactement au-dessus que d'un seul endroit à la fois."
+            },
+            {
+              "texte": "Exemple corrigé : à midi, deux bâtons plantés dans deux villes éloignées n'ont pas la même ombre. Ici, celui de Syène n'en a pas, celui d'Alexandrie si."
+            }
+          ],
+          "options": [
+            "Il n'a pas d'ombre non plus",
+            "Il a une ombre",
+            "Il fait nuit à Alexandrie"
+          ],
+          "retours": [
+            "Regarde à nouveau l'obélisque sur le schéma : son ombre ne disparaît pas.",
+            "",
+            "Non : les deux villes ne sont pas si éloignées, il fait jour dans les deux."
+          ]
+        },
+        {
+          "type": "texte",
+          "texte": "Sur le schéma, les rayons du Soleil sont dessinés parallèles entre eux."
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<p>Pourquoi peut-on dessiner les rayons du Soleil parallèles ?</p>",
+          "reponse": "VQ==",
+          "indices": [
+            {
+              "texte": "Compare la distance entre le Soleil et la Terre avec la distance entre Alexandrie et Syène.",
+              "video": "rayons-paralleles"
+            },
+            {
+              "texte": "Quand une source de lumière est extrêmement loin, les rayons qui arrivent à deux endroits proches ont presque la même direction."
+            },
+            {
+              "texte": "Exemple corrigé : deux personnes à un mètre l'une de l'autre regardent une étoile : leurs deux regards sont parallèles, car l'étoile est extrêmement loin."
+            }
+          ],
+          "options": [
+            "Parce que le Soleil est très loin de la Terre",
+            "Parce que le Soleil est plus petit que la Terre",
+            "Parce que les rayons du Soleil suivent la forme de la Terre"
+          ],
+          "retours": [
+            "",
+            "Au contraire : le Soleil est environ 109 fois plus large que la Terre !",
+            "Non : la lumière va en ligne droite."
+          ]
+        }
+      ],
+      "conclusion": "Les rayons du Soleil arrivent parallèles. Pourtant, au même instant, il n'y a pas d'ombre à Syène mais il y en a une à Alexandrie : le sol n'a pas la même orientation dans les deux villes… parce que la Terre est ronde !",
+      "conclusionSceau": "soleil-loin",
+      "carnet": {
+        "libelle": "Rayons du Soleil",
+        "valeur": "parallèles"
+      }
+    },
+    {
+      "id": "etape2",
+      "partie": 1,
+      "numero": 2,
+      "titre": "Mesurer l'angle à Alexandrie",
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "À midi, le jour du solstice d'été, Ératosthène mesure à Alexandrie l'angle entre l'obélisque, bien vertical, et les rayons du Soleil.",
+          "sceau": "obelisque"
+        },
+        {
+          "type": "popup",
+          "nom": "rapporteur",
+          "large": true,
+          "titre": "Le rapporteur",
+          "bouton": "Déplier : le rapporteur",
+          "boutonRevoir": "Revoir le rapporteur",
+          "consigne": "Fais glisser le rapporteur pour placer son centre au sommet de l'obélisque, puis tourne-le pour aligner la graduation 0 le long de l'obélisque."
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<p>Quelle est la mesure de l'angle entre l'obélisque et le rayon du Soleil ?</p>",
+          "reponse": "UlxT",
+          "indices": [
+            {
+              "texte": "Dans la loupe, regarde entre quelles graduations passe le rayon du Soleil.",
+              "video": "rapporteur"
+            },
+            {
+              "texte": "Les grands traits sont les degrés, les petits les demi-degrés. Le rayon passe juste après 7."
+            },
+            {
+              "texte": "Exemple corrigé : si le rayon passait juste avant le trait du 5, on lirait environ 4,8°."
+            }
+          ],
+          "unite": "°",
+          "tolerance": 0.06,
+          "bravo": "Bien lu ! Les sources rapportent exactement un cinquantième de cercle, soit 7,2° : c'est la valeur qu'on garde."
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<span class=\"defi\">Défi bonus</span><p>L'ombre est posée sur la Terre, qui est ronde. Pourquoi peut-on quand même considérer le sol comme plat sous l'ombre ?</p>",
+          "reponse": "VQ==",
+          "indices": [
+            {
+              "texte": "Compare la longueur de l'ombre à la taille de la Terre."
+            },
+            {
+              "texte": "Sur quelques mètres, la courbure d'une boule de 6 400 km de rayon est complètement invisible."
+            },
+            {
+              "texte": "Exemple corrigé : sur un ballon de football, une fourmi a l'impression que le sol est plat, car elle est minuscule par rapport au ballon."
+            }
+          ],
+          "facultatif": true,
+          "options": [
+            "Parce que l'ombre ne mesure que quelques mètres, alors que le rayon de la Terre mesure environ 6 400 km",
+            "Parce que le sol d'Alexandrie est parfaitement plat",
+            "Parce que la Terre est plate à Alexandrie"
+          ],
+          "retours": [
+            "",
+            "Même un sol bien plat suit la courbure de la Terre.",
+            "La Terre est ronde partout ! Mais sur quelques mètres, sa courbure est invisible."
+          ]
+        }
+      ],
+      "carnet": {
+        "libelle": "Angle à Alexandrie",
+        "valeur": "7,2°"
+      }
+    },
+    {
+      "id": "etape3",
+      "partie": 1,
+      "numero": 3,
+      "titre": "L'angle au centre de la Terre",
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "Prolongeons vers le bas l'obélisque d'Alexandrie et le puits de Syène : les deux droites se coupent au centre de la Terre."
+        },
+        {
+          "type": "popup",
+          "nom": "angle-centre",
+          "large": true,
+          "titre": "Reporter l'angle",
+          "bouton": "Déplier : la coupe de la Terre",
+          "boutonRevoir": "Revoir la coupe",
+          "consigne": "L'angle de 7,2° mesuré au sommet de l'obélisque se retrouve ailleurs sur la figure. Où ?"
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<p>Pourquoi l'angle au centre de la Terre est-il égal à l'angle mesuré à Alexandrie ?</p>",
+          "reponse": "VQ==",
+          "indices": [
+            {
+              "texte": "Repère les deux droites parallèles : le rayon du Soleil qui arrive sur l'obélisque, et celui qui descend dans le puits (prolongé jusqu'au centre).",
+              "video": "alternes-internes"
+            },
+            {
+              "texte": "La droite qui va du centre de la Terre au sommet de l'obélisque coupe ces deux parallèles. Où sont les deux angles par rapport à elle ?"
+            },
+            {
+              "texte": "Exemple corrigé : quand une droite coupe deux parallèles, deux angles placés de part et d'autre de cette droite, entre les parallèles, sont alternes-internes : ils ont la même mesure."
+            }
+          ],
+          "options": [
+            "Ce sont des angles alternes-internes formés avec deux droites parallèles",
+            "Ce sont des angles opposés par le sommet",
+            "Ce sont des angles complémentaires"
+          ],
+          "retours": [
+            "",
+            "Non : des angles opposés par le sommet ont le même sommet. Ici, les deux angles sont à deux endroits différents.",
+            "Non : des angles complémentaires ont une somme de 90°."
+          ]
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<p>Combien mesure l'angle au centre de la Terre, entre Alexandrie et Syène ?</p>",
+          "reponse": "UlxT",
+          "indices": [
+            {
+              "texte": "Il est égal à l'angle mesuré à l'étape précédente."
+            },
+            {
+              "texte": "Regarde dans ton carnet : l'angle mesuré à Alexandrie."
+            },
+            {
+              "texte": "Exemple corrigé : si l'angle mesuré à Alexandrie avait été de 9°, l'angle au centre mesurerait aussi 9°."
+            }
+          ],
+          "unite": "°",
+          "tolerance": 0
+        }
+      ],
+      "conclusion": "Grâce aux rayons parallèles, l'angle mesuré avec une simple ombre est égal à l'angle au centre de la Terre. Ératosthène peut « voir » le centre de la Terre sans y aller !",
+      "carnet": {
+        "libelle": "Angle au centre",
+        "valeur": "7,2°"
+      }
+    },
+    {
+      "id": "etape4",
+      "partie": 1,
+      "numero": 4,
+      "titre": "Un cinquantième du tour",
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "À l'étape précédente, tu as montré que l'angle au centre de la Terre, entre le rayon qui va vers Alexandrie et celui qui va vers Syène, mesure 7,2°."
+        },
+        {
+          "type": "schema",
+          "nom": "angle-centre"
+        },
+        {
+          "type": "texte",
+          "texte": "Ératosthène, lui, ne parlait pas en degrés : il exprimait cet angle comme une <em>part du cercle</em>. Faisons comme lui : combien de fois cet angle tient-il dans un tour complet ?",
+          "sceau": "degres"
+        },
+        {
+          "type": "popup",
+          "nom": "cercle-50",
+          "titre": "Découper le cercle en parts de 7,2°",
+          "bouton": "Déplier le schéma",
+          "boutonRevoir": "Revoir le schéma",
+          "consigne": "Ajoute des parts de 7,2° jusqu'à remplir exactement le disque, sans qu'elles se chevauchent."
+        },
+        {
+          "type": "question",
+          "id": "nb-parts",
+          "enonce": "<p>Combien de parts de 7,2° faut-il pour faire un tour complet de 360° ?</p>",
+          "reponse": "UEI=",
+          "tolerance": 0,
+          "unite": "parts",
+          "indices": [
+            {
+              "texte": "Reprends le schéma : combien de parts as-tu posées quand le disque était plein ?"
+            },
+            {
+              "texte": "On peut aussi le calculer : combien de fois 7,2 tient-il dans 360 ? C'est une division."
+            },
+            {
+              "texte": "Exemple corrigé : un angle de 90° tient 4 fois dans un tour, car $360 \\div 90 = 4$. Fais pareil avec 7,2°."
+            }
+          ],
+          "saisie": "valeur"
+        },
+        {
+          "type": "question",
+          "id": "fraction-tour",
+          "enonce": "<p>Quelle fraction du tour complet représente l'angle de 7,2° ?</p><p class=\"aide\">Tu peux écrire une fraction (avec la touche a/b) ou un nombre décimal.</p>",
+          "reponse": "VVxRRg==",
+          "tolerance": 0.001,
+          "bravo": "Exactement : $\\dfrac{7{,}2}{360} = \\dfrac{1}{50}$.",
+          "indices": [
+            {
+              "texte": "Une fraction du tour, c'est une part du tout. Le tout, ici, c'est 360°.",
+              "video": "cinquantieme"
+            },
+            {
+              "texte": "Le tour est partagé en 50 parts égales. Une seule de ces parts, ça s'écrit comment en fraction ?"
+            },
+            {
+              "texte": "Exemple corrigé : 30° tient 12 fois dans 360°, donc 30° représente $\\dfrac{30}{360} = \\dfrac{1}{12}$ du tour. Fais pareil avec 7,2°."
+            }
+          ],
+          "saisie": "valeur"
+        },
+        {
+          "type": "question",
+          "id": "fraction-terre",
+          "enonce": "<p>Sur la Terre, que représente alors la distance entre Alexandrie et Syène ?</p>",
+          "options": [
+            "$\\frac{1}{360}$ du tour de la Terre",
+            "$\\frac{1}{50}$ du tour de la Terre",
+            "7,2 % du tour de la Terre",
+            "On ne peut pas le savoir sans faire le tour de la Terre"
+          ],
+          "reponse": "VA==",
+          "retours": [
+            "Non : $\\frac{1}{360}$ du tour correspondrait à un angle de 1°.",
+            "",
+            "Attention : 7,2 est un nombre de degrés, pas un pourcentage.",
+            "C'est justement l'astuce d'Ératosthène : l'angle suffit pour connaître la part du tour !"
+          ],
+          "bravo": "Oui ! L'angle au centre et l'arc qu'il découpe représentent la même part du cercle.",
+          "indices": [
+            {
+              "texte": "L'arc Alexandrie–Syène est découpé par l'angle au centre de 7,2°."
+            },
+            {
+              "texte": "Un angle au centre et l'arc qu'il découpe représentent la même part du cercle."
+            },
+            {
+              "texte": "Exemple corrigé : un angle au centre de 90°, c'est $\\frac{1}{4}$ du tour ; l'arc qu'il découpe est donc $\\frac{1}{4}$ du tour du cercle."
+            }
+          ],
+          "saisie": "choix"
+        }
+      ],
+      "conclusion": "Ératosthène tient sa clé : la distance d'Alexandrie à Syène est $\\frac{1}{50}$ du tour de la Terre. S'il connaît cette distance, il lui suffira de la multiplier par 50 !",
+      "conclusionSceau": "cinquantieme",
+      "carnet": {
+        "libelle": "Part du tour",
+        "valeur": "$\\frac{1}{50}$"
+      }
+    },
+    {
+      "id": "etape5",
+      "partie": 1,
+      "numero": 5,
+      "titre": "La distance d'Alexandrie à Syène",
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "Il manque une dernière donnée à Ératosthène : la distance entre Alexandrie et Syène."
+        },
+        {
+          "type": "texte",
+          "texte": "Les sources antiques donnent la valeur qu'il a retenue : <strong>5 000 stades</strong>.",
+          "sceau": "5000-stades"
+        },
+        {
+          "type": "texte",
+          "texte": "Comment l'a-t-il obtenue ? On raconte qu'elle venait des bématistes royaux, des arpenteurs entraînés à marcher d'un pas toujours égal et à compter leurs pas sur de très longues distances.",
+          "sceau": "bematistes"
+        },
+        {
+          "type": "texte",
+          "texte": "On lit aussi parfois qu'il aurait chronométré des caravanes de chameaux entre les deux villes.",
+          "sceau": "chameaux"
+        },
+        {
+          "type": "texte",
+          "texte": "Enfin, Ératosthène considère que Syène est exactement au sud d'Alexandrie.",
+          "sceau": "meme-meridien"
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<p>Laquelle de ces affirmations est une légende ?</p>",
+          "reponse": "Vw==",
+          "indices": [
+            {
+              "texte": "Les sceaux de cire peuvent t'aider : clique dessus !"
+            },
+            {
+              "texte": "Le sceau rouge signale une légende ou une simplification."
+            },
+            {
+              "texte": "Exemple corrigé : un sceau vert veut dire « attesté par les sources » ; un sceau rouge, « légende ou simplification »."
+            }
+          ],
+          "options": [
+            "La distance de 5 000 stades est donnée par les sources antiques",
+            "Les bématistes comptaient leurs pas pour mesurer les routes",
+            "Ératosthène a chronométré des caravanes de chameaux"
+          ],
+          "retours": [
+            "Non : c'est attesté. Regarde la couleur du sceau.",
+            "Non : les bématistes ont vraiment existé. Regarde le sceau.",
+            ""
+          ]
+        },
+        {
+          "type": "texte",
+          "texte": "Le stade est une unité de longueur grecque : Alexandrie, fondée par Alexandre le Grand, était une ville de langue grecque.",
+          "sceau": "alexandrie-grecque"
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<p>Quelle unité les savants d'Alexandrie utilisaient-ils pour cette distance ?</p>",
+          "reponse": "VA==",
+          "indices": [
+            {
+              "texte": "Relis le dernier paragraphe."
+            },
+            {
+              "texte": "C'est une unité grecque."
+            },
+            {
+              "texte": "Exemple corrigé : à Rome, on comptait les longues distances en milles romains ; chez les Grecs, on utilisait une autre unité, citée juste au-dessus."
+            }
+          ],
+          "options": [
+            "La coudée",
+            "Le stade",
+            "Le mètre"
+          ],
+          "retours": [
+            "La coudée est une unité égyptienne, utilisée surtout pour des longueurs plus courtes.",
+            "",
+            "Le mètre n'existait pas encore : il naîtra en France, plus de 2 000 ans plus tard !"
+          ]
+        }
+      ],
+      "carnet": {
+        "libelle": "Alexandrie → Syène",
+        "valeur": "5 000 stades"
+      }
+    },
+    {
+      "id": "etape6",
+      "partie": 1,
+      "numero": 6,
+      "titre": "Le tour de la Terre",
+      "calculatrice": true,
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "Récapitulons : l'arc d'Alexandrie à Syène mesure 5 000 stades, et il correspond à un angle au centre de 7,2°. La longueur d'un arc est proportionnelle à son angle au centre."
+        },
+        {
+          "type": "texte",
+          "texte": "<table class=\"tableau-prop\"><caption>Tableau de proportionnalité</caption><tr><th scope=\"row\">Angle au centre (en °)</th><td>7,2</td><td>360</td></tr><tr><th scope=\"row\">Longueur de l'arc (en stades)</th><td>5 000</td><td class=\"inconnue\">?</td></tr></table>"
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<p>Par quel nombre multiplie-t-on 7,2 pour obtenir 360 ?</p>",
+          "reponse": "UEI=",
+          "indices": [
+            {
+              "texte": "Tu as déjà trouvé ce nombre à l'étape 4.",
+              "video": "proportionnalite"
+            },
+            {
+              "texte": "C'est le nombre de parts de 7,2° dans un tour : $360 \\div 7{,}2$."
+            },
+            {
+              "texte": "Exemple corrigé : pour passer de 9 à 360, on multiplie par $360 \\div 9 = 40$."
+            }
+          ],
+          "tolerance": 0
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<p>Combien de stades mesure le tour de la Terre ?</p>",
+          "reponse": "V0dRRF9D",
+          "indices": [
+            {
+              "texte": "Dans un tableau de proportionnalité, on multiplie la deuxième ligne par le même nombre que la première."
+            },
+            {
+              "texte": "Calcule $5\\,000 \\times 50$. Tu peux utiliser la calculatrice."
+            },
+            {
+              "texte": "Exemple corrigé : si l'arc mesurait 3 000 stades, le tour mesurerait $3\\,000 \\times 50 = 150\\,000$ stades."
+            }
+          ],
+          "unite": "stades",
+          "tolerance": 0,
+          "bravo": "Bravo : $5\\,000 \\times 50 = 250\\,000$ stades !"
+        }
+      ],
+      "conclusion": "Ératosthène a mesuré le tour de la Terre : <strong>250 000 stades</strong>, sans jamais quitter l'Égypte !",
+      "conclusionSceau": "250000",
+      "carnet": {
+        "libelle": "Tour de la Terre",
+        "valeur": "250 000 stades"
+      }
+    },
+    {
+      "id": "diplome",
+      "type": "diplome",
+      "partie": 1,
+      "surtitre": "Fin de la partie 1",
+      "titre": "Bématiste royal !",
+      "texte": "Tu as refait tout le raisonnement d'Ératosthène. Voici ton diplôme : tu peux le télécharger.",
+      "boutonTelecharger": "Télécharger le diplôme",
+      "diplome": {
+        "surtitre": "Bibliothèque d'Alexandrie",
+        "titre": "Diplôme de bématiste royal",
+        "decerne": "décerné à",
+        "lignes": [
+          "pour avoir mesuré, comme Ératosthène,",
+          "le tour de la Terre : 250 000 stades"
+        ],
+        "signature": "Signé : Ératosthène (ou presque)"
+      }
+    },
+    {
+      "id": "transition",
+      "partie": 2,
+      "numero": 0,
+      "transition": true,
+      "surtitre": "Transition",
+      "titre": "Et aujourd'hui ?",
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "C'est bien d'avoir trouvé le tour de la Terre en stades, mais le stade était l'unité des Grecs de l'époque. On aurait pu l'exprimer en coudées, ou dans bien d'autres unités."
+        },
+        {
+          "type": "texte",
+          "texte": "Aujourd'hui, nous utilisons le <strong>mètre</strong>. Mais d'où vient-il, et quel est son lien avec le tour de la Terre ?"
+        }
+      ]
+    },
+    {
+      "id": "etape7",
+      "partie": 2,
+      "numero": 7,
+      "titre": "La pagaille des unités",
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "À la fin du XVIIIe siècle, en France, chaque région, parfois chaque ville, a ses propres unités : une aune de Lyon n'est pas une aune de Paris. Commercer, construire ou payer l'impôt devient un vrai casse-tête.",
+          "sceau": "unites-pagaille"
+        },
+        {
+          "type": "texte",
+          "texte": "À Paris, on mesure les longueurs en toises, en pieds, en pouces et en lignes :",
+          "sceau": "toise-pieds"
+        },
+        {
+          "type": "texte",
+          "texte": "<table class=\"tableau-prop\"><tr><td>1 toise</td><td>= 6 pieds</td></tr><tr><td>1 pied</td><td>= 12 pouces</td></tr><tr><td>1 pouce</td><td>= 12 lignes</td></tr></table>"
+        },
+        {
+          "type": "texte",
+          "texte": "On comptait pourtant déjà en base 10 ! Mais ces unités ne sont pas décimales : pour passer de l'une à l'autre, il faut multiplier par 6 ou par 12."
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<p>Combien de pouces y a-t-il dans une toise ?</p>",
+          "reponse": "UkA=",
+          "indices": [
+            {
+              "texte": "Une toise, c'est 6 pieds."
+            },
+            {
+              "texte": "Chaque pied contient 12 pouces : calcule $6 \\times 12$."
+            },
+            {
+              "texte": "Exemple corrigé : dans 2 pieds, il y a $2 \\times 12 = 24$ pouces."
+            }
+          ],
+          "unite": "pouces",
+          "tolerance": 0
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<span class=\"defi\">Défi bonus</span><p>Et combien de lignes y a-t-il dans une toise ?</p>",
+          "reponse": "XURV",
+          "indices": [
+            {
+              "texte": "Tu sais déjà combien il y a de pouces dans une toise."
+            },
+            {
+              "texte": "Chaque pouce contient 12 lignes : calcule $72 \\times 12$."
+            },
+            {
+              "texte": "Exemple corrigé : dans 1 pied, il y a $12 \\times 12 = 144$ lignes."
+            }
+          ],
+          "unite": "lignes",
+          "tolerance": 0,
+          "facultatif": true,
+          "bravo": "Oui, 864 lignes ! Tu vois pourquoi tout le monde rêvait d'unités décimales…"
+        },
+        {
+          "type": "texte",
+          "texte": "La Révolution veut une unité nouvelle, « à tous les temps, à tous les peuples » : une longueur tirée de la nature, que n'importe quel pays pourrait retrouver.",
+          "sceau": "condorcet"
+        },
+        {
+          "type": "texte",
+          "texte": "En 1791, les savants choisissent la Terre elle-même : la nouvelle unité sera une fraction du méridien, la ligne imaginaire qui va du pôle Nord au pôle Sud. Exactement ce qu'avait mesuré Ératosthène !",
+          "sceau": "academie-1791"
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<p>Pourquoi avoir choisi le méridien terrestre comme référence ?</p>",
+          "reponse": "VQ==",
+          "indices": [
+            {
+              "texte": "Les révolutionnaires voulaient une unité qui ne dépende d'aucun roi ni d'aucune ville."
+            },
+            {
+              "texte": "La Terre appartient à tout le monde, et chaque pays peut mesurer un morceau de méridien."
+            },
+            {
+              "texte": "Exemple corrigé : une unité tirée du pied d'un roi change avec le roi ; une unité tirée de la Terre est la même pour tous."
+            }
+          ],
+          "options": [
+            "Parce que c'est une longueur qui appartient à tous, que chaque pays peut mesurer",
+            "Parce que Paris est sur un méridien",
+            "Parce que le roi l'avait demandé"
+          ],
+          "retours": [
+            "",
+            "Toutes les villes sont sur un méridien ! Ce n'est pas la raison.",
+            "Non : en 1791, on cherche justement une unité qui ne dépende pas d'un roi."
+          ]
+        }
+      ],
+      "carnet": {
+        "libelle": "1 toise",
+        "valeur": "6 pieds = 72 pouces"
+      }
+    },
+    {
+      "id": "etape8",
+      "partie": 2,
+      "numero": 8,
+      "titre": "Mesurer le quart de méridien",
+      "calculatrice": true,
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "De 1792 à 1798, deux astronomes, Jean-Baptiste Delambre et Pierre Méchain, mesurent l'arc de méridien entre Dunkerque et Barcelone, en pleine Révolution.",
+          "sceau": "delambre-mechain"
+        },
+        {
+          "type": "texte",
+          "texte": "Un travail immense et parfois dangereux : arrêtés comme espions, bloqués par la guerre… Méchain, lui, garda toute sa vie le secret d'une petite erreur dans ses mesures.",
+          "sceau": "mechain-erreur"
+        },
+        {
+          "type": "schema",
+          "nom": "arc-meridien"
+        },
+        {
+          "type": "texte",
+          "texte": "Résultat : l'arc de Dunkerque à Barcelone mesure environ <strong>551 585 toises</strong>, pour un écart de latitude d'environ <strong>9,67°</strong>.",
+          "sceau": "arc-valeurs"
+        },
+        {
+          "type": "texte",
+          "texte": "<table class=\"tableau-prop\"><caption>Tableau de proportionnalité</caption><tr><th scope=\"row\">Angle (en °)</th><td>9,67</td><td>90</td></tr><tr><th scope=\"row\">Longueur de l'arc (en toises)</th><td>551 585</td><td class=\"inconnue\">?</td></tr></table>"
+        },
+        {
+          "type": "texte",
+          "texte": "C'est <strong>exactement le raisonnement d'Ératosthène</strong>, deux mille ans plus tard : un angle, une distance, et la proportionnalité !"
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<p>Combien de toises mesure le quart de méridien, de l'équateur au pôle (90°) ?</p><p class=\"aide\">Tu peux utiliser la calculatrice. Arrondis au millier de toises.</p>",
+          "reponse": "UENSR1lEQkZWX11QQ1FMWks=",
+          "indices": [
+            {
+              "texte": "Le quart de méridien correspond à un angle de 90°.",
+              "video": "proportionnalite"
+            },
+            {
+              "texte": "Calcule d'abord la longueur pour 1° : $551\\,585 \\div 9{,}67$, puis multiplie par 90."
+            },
+            {
+              "texte": "Exemple corrigé : si 10° correspondaient à 570 000 toises, 90° correspondraient à $570\\,000 \\div 10 \\times 90 = 5\\,130\\,000$ toises."
+            }
+          ],
+          "unite": "toises",
+          "tolerance": 0.006,
+          "bravo": "Environ 5 130 000 toises : bravo !"
+        }
+      ],
+      "conclusion": "En tenant compte de la forme exacte de la Terre, les savants retiennent <strong>5 130 740 toises</strong> pour le quart de méridien.",
+      "conclusionSceau": "aplatissement",
+      "carnet": {
+        "libelle": "Quart de méridien",
+        "valeur": "5 130 740 toises"
+      }
+    },
+    {
+      "id": "etape9",
+      "partie": 2,
+      "numero": 9,
+      "titre": "Pourquoi un dix-millionième ?",
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "Le quart de méridien est connu. Mais pourquoi le diviser par 10 millions pour obtenir le mètre ? Les savants avaient trois raisons.",
+          "sceau": "trois-raisons"
+        },
+        {
+          "type": "texte",
+          "texte": "<strong>1. L'universalité</strong> : l'unité est tirée de la Terre, qui appartient à tous.<br><strong>2. Le système décimal</strong> : on ne divise que par 10, 100, 1 000… comme quand on compte.<br><strong>3. L'échelle humaine</strong> : l'unité doit être pratique pour mesurer un tissu, une pièce, une personne."
+        },
+        {
+          "type": "popup",
+          "nom": "puissances",
+          "large": true,
+          "titre": "Diviser le quart de méridien",
+          "bouton": "Déplier : les règles anciennes",
+          "boutonRevoir": "Revoir les règles",
+          "consigne": "Les règles orange représentent des unités anciennes, dessinées à la même échelle. Divise le quart de méridien (en bleu) par des puissances de 10 et compare."
+        },
+        {
+          "type": "question",
+          "saisie": "choix",
+          "enonce": "<p>Par quelle puissance de 10 faut-il diviser le quart de méridien pour tomber dans la zone des unités humaines ?</p>",
+          "reponse": "VA==",
+          "indices": [
+            {
+              "texte": "Rouvre les règles et regarde quand la barre bleue tombe dans la zone verte.",
+              "video": "puissances-de-10"
+            },
+            {
+              "texte": "$10\\,000\\,000 \\div 10^6 = 10$ m. Est-ce une longueur pratique pour mesurer un tissu ?"
+            },
+            {
+              "texte": "Exemple corrigé : diviser par $10^3$ revient à diviser par 1 000 : $10\\,000\\,000 \\div 10^3 = 10\\,000$ m."
+            }
+          ],
+          "options": [
+            "$10^6$",
+            "$10^7$",
+            "$10^8$"
+          ],
+          "retours": [
+            "$10\\,000\\,000 \\div 10^6 = 10$ m : bien trop grand pour une unité de tous les jours.",
+            "",
+            "$10\\,000\\,000 \\div 10^8 = 0{,}1$ m : trop petit, plus petit qu'un pied."
+          ]
+        },
+        {
+          "type": "texte",
+          "texte": "D'autres idées avaient été envisagées, comme la longueur d'un pendule qui bat la seconde.",
+          "sceau": "pendule"
+        },
+        {
+          "type": "texte",
+          "texte": "Les savants révolutionnaires voulaient aussi des angles décimaux : un quart de tour vaut 100 grades.",
+          "sceau": "grade"
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<span class=\"defi\">Défi bonus</span><p>Combien de kilomètres mesure un grade de méridien ?</p>",
+          "reponse": "VEJR",
+          "indices": [
+            {
+              "texte": "Un quart de méridien mesure 10 000 km."
+            },
+            {
+              "texte": "Il est partagé en 100 grades : calcule $10\\,000 \\div 100$."
+            },
+            {
+              "texte": "Exemple corrigé : si le quart de méridien mesurait 8 000 km, un grade mesurerait $8\\,000 \\div 100 = 80$ km."
+            }
+          ],
+          "unite": "km",
+          "tolerance": 0,
+          "facultatif": true,
+          "bravo": "100 km : un nombre tout rond, grâce au système décimal !"
+        }
+      ],
+      "conclusion": "Le mètre est né : <strong>la dix-millionième partie du quart de méridien</strong>. Il lui faudra pourtant du temps pour s'imposer, en France puis dans le monde.",
+      "conclusionSceau": "convention-metre",
+      "carnet": {
+        "libelle": "1 mètre",
+        "valeur": "quart de méridien ÷ 10⁷"
+      }
+    },
+    {
+      "id": "etape10",
+      "partie": 2,
+      "numero": 10,
+      "titre": "Le mètre en toises",
+      "calculatrice": true,
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "Le quart de méridien mesure 5 130 740 toises, et le mètre en est la dix-millionième partie."
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<p>Combien de toises vaut un mètre ? Arrondis au millième.</p>",
+          "reponse": "VVxURVxDQ1w=",
+          "indices": [
+            {
+              "texte": "Le mètre, c'est le quart de méridien divisé par 10 000 000."
+            },
+            {
+              "texte": "Calcule $5\\,130\\,740 \\div 10\\,000\\,000$ : diviser par $10^7$, c'est décaler la virgule de 7 rangs vers la gauche."
+            },
+            {
+              "texte": "Exemple corrigé : $4\\,000\\,000 \\div 10\\,000\\,000 = 0{,}4$."
+            }
+          ],
+          "unite": "toise",
+          "tolerance": 0.005,
+          "bravo": "Oui : 1 m ≈ 0,513 toise, un peu plus d'une demi-toise."
+        }
+      ],
+      "conclusion": "En 1799, un mètre étalon en platine est fabriqué et déposé aux Archives : la nouvelle unité devient officielle.",
+      "conclusionSceau": "metre-1799",
+      "carnet": {
+        "libelle": "1 mètre",
+        "valeur": "≈ 0,513 toise"
+      }
+    },
+    {
+      "id": "etape11",
+      "partie": 2,
+      "numero": 11,
+      "titre": "La boucle se referme",
+      "calculatrice": true,
+      "blocs": [
+        {
+          "type": "texte",
+          "texte": "Revenons à Ératosthène ! Par définition du mètre, le quart de méridien mesure 10 000 000 m."
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<p>Combien de kilomètres mesure alors le tour complet de la Terre ?</p>",
+          "reponse": "UUJRRF8=",
+          "indices": [
+            {
+              "texte": "Le tour complet, c'est 4 quarts de méridien."
+            },
+            {
+              "texte": "$4 \\times 10\\,000\\,000$ m = 40 000 000 m. Combien de kilomètres cela fait-il ?"
+            },
+            {
+              "texte": "Exemple corrigé : 5 000 000 m = 5 000 km, car 1 km = 1 000 m."
+            }
+          ],
+          "unite": "km",
+          "tolerance": 0
+        },
+        {
+          "type": "texte",
+          "texte": "Les mesures modernes donnent 40 008 km pour le tour de la Terre en passant par les pôles : le mètre de 1799 était à peine trop court !",
+          "sceau": "40000"
+        },
+        {
+          "type": "texte",
+          "texte": "Ératosthène avait trouvé <strong>250 000 stades</strong> pour ce même tour. On peut enfin répondre à la question : combien mesure un stade ?"
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<p>Combien de mètres mesure un stade, d'après le résultat d'Ératosthène ?</p>",
+          "reponse": "VERR",
+          "indices": [
+            {
+              "texte": "250 000 stades = 40 000 000 m."
+            },
+            {
+              "texte": "Divise : $40\\,000\\,000 \\div 250\\,000$."
+            },
+            {
+              "texte": "Exemple corrigé : si 100 stades valaient 18 000 m, un stade vaudrait $18\\,000 \\div 100 = 180$ m."
+            }
+          ],
+          "unite": "m",
+          "tolerance": 0.01,
+          "bravo": "Un stade vaut environ 160 m !"
+        },
+        {
+          "type": "texte",
+          "texte": "Révélation : ce résultat tombe pile dans la fourchette proposée par les historiens, qui hésitent entre environ 157 m et 185 m pour le stade d'Ératosthène.",
+          "sceau": "stade-fourchette"
+        },
+        {
+          "type": "question",
+          "saisie": "valeur",
+          "enonce": "<span class=\"defi\">Défi bonus</span><p>Si le stade d'Ératosthène mesurait en réalité 185 m (stade attique), combien de kilomètres aurait-il trouvé pour le tour de la Terre ?</p>",
+          "reponse": "UURTQV8=",
+          "indices": [
+            {
+              "texte": "Multiplie le nombre de stades par la longueur d'un stade."
+            },
+            {
+              "texte": "Calcule $250\\,000 \\times 185$ m, puis convertis en km."
+            },
+            {
+              "texte": "Exemple corrigé : avec un stade de 160 m, on trouve $250\\,000 \\times 160 = 40\\,000\\,000$ m, soit 40 000 km."
+            }
+          ],
+          "unite": "km",
+          "tolerance": 0.001,
+          "facultatif": true,
+          "bravo": "46 250 km : environ 16 % de trop. Avec un stade de 157,5 m, on trouverait 39 375 km, à 2 % près ! Tout dépend de la longueur du stade : c'est pour cela que les historiens en débattent encore."
+        }
+      ],
+      "conclusion": "La boucle est bouclée : avec une ombre, un puits et beaucoup d'intelligence, Ératosthène avait trouvé la taille de la Terre avec une précision étonnante. Et deux mille ans plus tard, le même raisonnement a donné naissance au mètre.",
+      "carnet": {
+        "libelle": "1 stade",
+        "valeur": "≈ 160 m"
+      }
+    }
+  ],
+  "fin": {
+    "surtitre": "Fin du voyage",
+    "titre": "Du stade au mètre",
+    "texte": "Bravo {nom} ! Tu as refait le raisonnement d'Ératosthène, puis celui de Delambre et Méchain, et tu as relié le stade au mètre.",
+    "codeTexte": "Voici ton code final. Recopie-le soigneusement et donne-le à ton professeur avec ton nom :",
+    "plusLoinTitre": "Pour aller plus loin",
+    "plusLoin": [
+      "D'où vient l'écart entre le résultat d'Ératosthène (250 000 stades) et la réalité ? Compare les résultats en km avec un stade de 157,5 m, de 160 m et de 185 m.",
+      "Ératosthène a supposé que Syène était exactement au sud d'Alexandrie, sur le même méridien. En réalité, elle est environ 3° plus à l'est. Cela rend-il sa mesure plus grande ou plus petite que la vraie distance le long du méridien ?",
+      "Aujourd'hui, le mètre n'est plus défini par la Terre, mais par la vitesse de la lumière (depuis 1983). Cherche pourquoi on a changé de définition."
+    ],
+    "bouton": "Recommencer l'activité"
+  }
+}

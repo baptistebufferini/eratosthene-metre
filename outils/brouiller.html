@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brouiller une réponse</title>
+  <style>
+    body { font: 1.1rem/1.5 system-ui, sans-serif; max-width: 640px; margin: 40px auto; padding: 0 16px; background: #f1e2c0; color: #3a2614; }
+    input, output { font: inherit; padding: 6px 10px; }
+    output { display: block; margin-top: 12px; padding: 10px; background: white; border-radius: 6px; user-select: all; }
+  </style>
+</head>
+<body>
+  <h1>Brouiller une réponse</h1>
+  <p>Tape la bonne réponse : un nombre (avec un point décimal, par exemple <code>0.02</code>) ou, pour une question à choix, le numéro de la bonne option en comptant à partir de <strong>0</strong>.
+  Copie le résultat dans le champ <code>"reponse"</code> de <code>config/contenu.json</code>.</p>
+  <label>Réponse : <input id="valeur" autofocus></label>
+  <output id="resultat"></output>
+  <script type="module">
+    import { brouiller, debrouiller } from "../js/correction.js";
+    const champ = document.getElementById("valeur");
+    champ.addEventListener("input", () => {
+      const v = Number(champ.value.trim().replace(",", "."));
+      const res = document.getElementById("resultat");
+      if (!champ.value.trim() || !Number.isFinite(v)) { res.textContent = ""; return; }
+      const code = brouiller(v);
+      console.assert(debrouiller(code) === v);
+      res.textContent = code;
+    });
+  </script>
+</body>
+</html>
