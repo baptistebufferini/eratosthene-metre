@@ -4,14 +4,16 @@
 
 ## ▶ Tâche de la prochaine session
 
-**Commit et mise en ligne.**
+**Aucune tâche prévue : la liste est terminée.** Demander au professeur ce qu'il veut faire ensuite. Pistes possibles (à lui de choisir) :
 
-1. Demander d'abord au professeur : le nom du dépôt GitHub, et s'il doit être public (GitHub Pages gratuit demande un dépôt public).
-2. Lancer les tests (`node tests/correction.test.mjs` et `node tests/codes.test.mjs`), puis vérifier `git status` : rien ne doit être oublié (vidéos 7, 8, 9, `CLAUDE.md`, `REPRISE.md`). Ne pas commiter `videos/animations/media/` ni `.venv` (vérifier le `.gitignore`).
-3. Commiter tout le travail en attente sur `main`.
-4. Créer le dépôt avec `gh repo create`, pousser `main`, activer Pages (branche `main`, dossier racine), puis ouvrir le site en ligne et vérifier qu'il se charge, avec une étape de la partie 2.
+- Compléter `SOURCES.md` : le sceau `trois-raisons` est encore ○, et l'arrestation de Delambre / Méchain bloqué en Espagne n'y est pas encore (◐, source : Ken Alder, *Mesurer le monde*).
+- Quand les vidéos seront tournées et mises en ligne : remplir les liens de `config/videos.json`, commiter et pousser (Pages se met à jour tout seul en 1 à 2 minutes).
 
-Points ouverts à signaler : les liens de `config/videos.json` sont tous encore vides (les vidéos ne sont pas encore tournées ni mises en ligne). Le sceau `trois-raisons` est encore ○ dans `SOURCES.md`, et l'arrestation de Delambre / Méchain bloqué en Espagne n'y est pas encore ajoutée.
+## Le site en ligne
+
+- Dépôt public : https://github.com/baptistebufferini/eratosthene-metre
+- Site : https://baptistebufferini.github.io/eratosthene-metre/ (Pages sur `main`, dossier racine).
+- Pour publier une modification : commiter sur `main` puis `git push`.
 
 ## Le projet
 
@@ -19,7 +21,7 @@ Activité web de maths pour le collège, « De la Terre d'Ératosthène au mètr
 
 **Règle des consignes :** chaque script vidéo, puis chaque paire d'animations, est validé par le professeur avant de passer au suivant.
 
-## Ce qui est fait (commit `e669616` sur `main`, non poussé)
+## Ce qui est fait (commits `e669616` et `76a86ff` sur `main`, poussés)
 
 - **Site complet** : `index.html`, avec un prologue (Terre ronde, 3 animations), la partie 1 (étapes 1 à 6 et le diplôme), une transition, la partie 2 (étapes 7 à 11) et l'écran final avec le code de l'élève.
 - **Page professeur** : `prof.html`.
@@ -28,17 +30,18 @@ Activité web de maths pour le collège, « De la Terre d'Ératosthène au mètr
 - **Tests** : `node tests/correction.test.mjs` et `node tests/codes.test.mjs`.
 - **Vidéos de la partie 1** : 6 scripts dans `videos/scripts/01` à `06`, et 12 animations MP4 dans `videos/animations/mp4/` (A1-A2, B1-B2, C1-C2, D1-D2, E1-E2, F1-F2). Elles sont toutes validées.
 
-## Fait depuis le commit (modifications non commitées)
+## Fait dans le commit `76a86ff` (vidéos 7 à 9)
 
 - **Vidéo 7** « La pagaille des unités » : terminée et validée. Le script est `videos/scripts/07-pagaille-unites.md`, les animations sont dans `g1_g2_pagaille.py` et dans `mp4/G1DeuxAunes.mp4` et `mp4/G2ToisePiedsPouces.mp4`. L'emplacement s'appelle `partie2-introduction` (écran de transition).
 - **Vidéo 8** « Delambre et Méchain » : l'emplacement `triangulation` est créé, avec un bloc vidéo au début de l'étape 8, une ligne dans `videos.json` et une dans le README. Le script `videos/scripts/08-triangulation.md` est validé. Les animations sont dans `h1_h2_triangulation.py` et dans `mp4/H1BaseDeuxAngles.mp4` (9 s) et `mp4/H2ChaineDeTriangles.mp4` (10 s) ; elles sont **validées**. La carte de France de H2 est un contour très simplifié, tracé à la main.
 - **Étape 8** (`config/contenu.json`) : « arrêtés comme espions, bloqués par la guerre » devient « Delambre arrêté comme espion, Méchain bloqué en Espagne par la guerre ». Ce point n'est pas encore ajouté à `SOURCES.md` (◐, source : Ken Alder, *Mesurer le monde*).
 - **Vidéo 9** « Les puissances de 10 » : terminée et validée. Le script est `videos/scripts/09-puissances-de-10.md` (exemple d'une route de 15 km, pour ne jamais diviser le quart de méridien). Les animations sont dans `i1_i2_puissances.py`, `mp4/I1ExposantZeros.mp4` (10 s) et `mp4/I2TropGrandTropPetit.mp4` (9 s).
 - Les tests passent.
+- **Mise en ligne** (12/11/2026) : dépôt public `eratosthene-metre` créé avec `gh`, `main` poussé, Pages activé. Le site en ligne se charge sans erreur, et l'étape 8 de la partie 2 s'affiche.
 
 ## Ce qui reste à faire, dans l'ordre (une tâche par session)
 
-1. **Commit et mise en ligne** : commiter tout le travail en attente, puis créer le dépôt GitHub (avec `gh`), pousser `main`, activer Pages (branche `main`, dossier racine), puis vérifier le site en ligne. Demander d'abord au professeur le nom du dépôt et s'il doit être public. C'est la tâche décrite en haut de ce fichier.
+Rien de prévu. Voir les pistes en haut de ce fichier.
 
 ## Conventions pour les vidéos
 
@@ -53,5 +56,6 @@ Activité web de maths pour le collège, « De la Terre d'Ératosthène au mètr
 ## Divers
 
 - **Tester le site en local** : `python -m http.server 8765` à la racine, puis ouvrir http://localhost:8765. Il ne s'ouvre pas en double-cliquant sur le fichier.
+- **Aller directement à une étape pour tester** : dans la console, mettre `etape` (indice dans `C.etapes`, l'étape 8 est l'indice 10) dans la sauvegarde `eratosthene-metre-v1` du `localStorage`, recharger, puis cliquer « Ouvrir le carnet » **sans retaper le nom** (il est prérempli ; un nom différent repart de zéro). Effacer la sauvegarde ensuite.
 - **Identité Git** : elle est configurée seulement pour ce dépôt, reprise de `trivial-maths`.
 - **Points historiques encore marqués ○ ou ◐** dans `SOURCES.md` : les valeurs exactes de Delambre, la composition de la commission de 1791, Aristote et Canopus, etc.
